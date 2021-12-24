@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+	<html lang = "uk">
+	<head>
+		<meta charset="UTF-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<link rel="stylesheet" href="../../style.css">
+    	<title>Похідна</title>
+    	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+        	$('#topNubex').fadeIn();
+            $(window).scroll(function(){
+                if($(this).scrollTop() !=0){
+                    $('#topNubex').fadeIn();
+                }
+                else {
+                    $('#topNubex').fadeOut();
+                }
+            });
+            $('#topNubex').click(function(){
+                $('body,html').animate({scrollTop:0},700);
+            });
+        });
+    </script>
+	</head>
+	<body>
+		
+		<header class="header">
+			<h1>
+				<span class="blok_span"> <a href="../../index.html" class="header_silka">Главная </a></span> 
+				<span class="blok_span"> <a href="../mat_indukcia/Mat_indekcia.html" class="header_silka">Метод мат.индукции </a></span> 
+				<span class="blok_span"> <a href="#" class="header_silka"> Похідна</a></span>
+				<span class="blok_span"> <a href="../pervisna/pervisna.html" class="header_silka">Первісна</a></span>
+			</h1>
+		</header>
+		<div class="conteiner">
+			<div class="blok">
+				<div id="indux1">
+					<p style="font-size: 5vw;"> Що таке похідна?</p>
+				</div>
+				<div class="blok1"> 
+					<p>
+					<b id="indux">Означеня:</b>
+					<a id="oznachenna"> Похідною функції f у точці x<sub>o</sub> називають число, яке дорівнює границі відношення приросту 
+					функції f у точці x<sub>o</sub> до відповідного приросту аргументу за умови, що приріст аргументу прямує до нуля.</a>
+					</p>
+				</div>
+				<div class="formula"> 
+					<div>
+						<p>Позначується</p>
+					</div>
+					<p><img src="photo/1.png"></p>
+					<div>
+						<p>або</p>
+					</div> 
+					<p><img src="photo/2.png"></p>	
+				</div>
+				<div class="center"> 
+					<div><p>Для обчислення похідних використовують формули, що запісані у таблиці нижче.</p></div>
+					<div><img src="photo/3.png"></div>
+				</div>
+				<div class="blok1"> 
+					<p>
+						<b id="indux">Приклад 2.1:</b>
+						Знайти похідну функції: 
+					</p>
+					<div class="zadachi">
+						<div class="zadachi_mini">
+							<p>1)y=x<sup>10</sup></p>
+							<p>
+								<b id="indux">Розв'язання:</b>
+								<p><img src="photo/4.png"></p>
+							</p>
+						</div>
+						<div class="zadachi_mini">
+							<p>2)y=tan<sup>-1</sup>x</p>
+							<p>
+							<b id="indux">Розв'язання:</b>
+							<p><img src="photo/5.png"> </p>
+							</p>
+						</div>
+						<div class="zadachi_mini">
+							<p>3)y=4<sup>x</sup></p>
+							<p>
+							<b id="indux">Розв'язання:</b>
+							<p><img src="photo/6.png"> </p>
+							</p>
+						</div>
+						<div class="zadachi_mini">
+							<p>4)y=lgx
+							<p>
+							<b id="indux">Розв'язання:</b>
+							<p><img src="photo/7.png"> </p>
+							</p>
+						</div>
+						
+					</div>	
+				</div>
+				<div class="blok1"> 
+					<p>
+						<b id="indux">Завдання 2.1:</b>
+						Знайти похідну функції: 
+					</p>
+					<div class="zadachi">
+						<div class="zadachi_mini">
+							<p>1)y=cosx</p>
+							<p><input type="text" class="i-1" ></p>
+							<p><button class="b-1"> Перевірити </button></p>
+							<p><div class="out-block out-1"></div></p>
+						</div>	
+						<div class="zadachi_mini">
+							<p>2)y=lnx</p>
+							<p><input type="text" class="i-2" ></p>
+							<p><button class="b-2"> Перевірити </button></p>
+							<p><div class="out-block out-2"></div></p>
+						</div>	
+						<div class="zadachi_mini">
+							<p>3)y=sin<sup>-1</sup>x</p>
+							<p><input type="text" class="i-3" ></p>
+							<p><button class="b-3"> Перевірити </button></p>
+							<p><div class="out-block out-3"></div></p>
+						</div>	<div class="zadachi_mini">
+							<p>4)y=x<sup>2023</sup></p>
+							<p><input type="text" class="i-4" ></p>
+							<p><button class="b-4"> Перевірити </button></p>
+							<p><div class="out-block out-4"></div></p>
+						</div>
+					</div>			
+				</div>
+				
+				<div class="center"> 
+					<p>Для обчислення похідних більш складних функцій використовують формули , що записані в таблиці нижче </p>
+					<div><p><img src="../pohidna/photo/8.png"></p></div>
+				</div>
+				<div class="blok1"> 
+					<p>
+						<b id="indux">Приклад 2.2:</b>
+						Знайти похідну функції: 
+					</p>
+					<div class="zadachi">
+						
+						<div class="zadachi_mini">
+							<p>1)y=x<sup>3</sup>-3*x<sup>2</sup>+6*x-10</p>
+							<p>
+							<b id="indux">Розв'язання:</b>
+							<p><img src="photo/9.png"></p>
+							</p>
+						</div>
+						<div class="zadachi_mini">
+							<p>2)y=4*x<sup>6</sup>=20*x<sup>1/2</sup></p>
+							<p>
+							<b id="indux">Розв'язання:</b>
+							<p><img src="photo/10.png"> </p>
+							</p>
+						</div>
+						<div class="zadachi_mini">
+							<p>3)y=x<sup>2</sup>*cotx</p>
+							<p>
+							<b id="indux">Розв'язання:</b>
+							<p><img src="photo/11.png"> </p>
+							</p>
+						</div>
+						<div class="zadachi_mini">
+							<p>4)y=x<sup>3</sup>/cosx
+							<p>
+							<b id="indux">Розв'язання:</b>
+							<p><img src="photo/12.png"> </p>
+							</p>
+						</div>
+						<div class="zadachi_mini">
+							<p>5)y=cos(3*x)/(x-1)
+							<p>
+							<b id="indux">Розв'язання:</b>
+							<p><img src="photo/13.png"> </p>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="blok1"> 
+					<p>
+						<b id="indux">Завдання 2.2:</b>
+						Знайти похідну функції: 
+					</p>
+					<div class="zadachi">
+						
+						<div class="zadachi_mini">
+							<p>1)y=sinx+2*cosx</p>
+							<p><input type="text" class="i-5" ></p>
+							<p><button class="b-5"> Перевірити </button></p>
+							<p><div class="out-block out-5"></div></p>
+						</div>	
+						<div class="zadachi_mini">
+							<p>2)y=sinx*x<sup>4</sup></p>
+							<p><input type="text" class="i-6" ></p>
+							<p><button class="b-6"> Перевірити </button></p>
+							<p><div class="out-block out-6"></div></p>
+						</div>	
+						<div class="zadachi_mini">
+							<p>3)y=0,4*x<sup>-5</sup>+3<sup>1/2</sup></p>
+							<p><input type="text" class="i-7" ></p>
+							<p><button class="b-7"> Перевірити </button></p>
+							<p><div class="out-block out-7"></div></p>
+						</div>	
+						<div class="zadachi_mini">
+							<p>4)y=(x<sup>2</sup>-5*x)/(x-7)</p>
+							<p><input type="text" class="i-8" ></p>
+							<p><button class="b-8"> Перевірити </button></p>
+							<p><div class="out-block out-8"></div></p>
+						</div>
+						<div class="zadachi_mini">
+							<p>5)y=(6*x+20)<sup>1/4</sup></p>
+							<p><input type="text" class="i-9" ></p>
+							<p><button class="b-9"> Перевірити </button></p>
+							<p><div class="out-block out-9"></div></p>
+						</div>
+					</div>		
+					
+				</div>
+			<div class="footer">
+				<div class="footer_mini">
+					<div class="mini">
+						<p>Всі права захищені © 2023</p>
+					</div>
+					<div class="mini">
+						<p>Автор сайту: Хребтов Михайло</p>
+					</div>
+				</div>
+				<div class="footer_mini">
+					<div class="mini">
+						<p>Телефон для зв'язку: +380000000000</p>
+					</div>
+					<div class="mini">
+						<p>Пошта для зв'язку: hrebtovmisha@gmail.com</p>
+					</div>
+				</div>
+				<div class="footer_mini">
+					<div id="logo">
+						<img src="../photo/logo.png">
+					</div>
+				</div>
+				<div class="footer_mini">
+				<p><a href="../../index.html" class="footer_silka" >Главная </a></p>
+				<p><a href="../mat_indukcia/Mat_indekcia.html" class="footer_silka">Метод мат.индукции </a></p>
+				<p><a href="#" class="footer_silka"> Похідна</a></p>
+				<p><a href="../pervisna/pervisna.html" class="footer_silka">Первісна</a></p>
+				</div>
+			</div>
+		</div>
+	<div id="topNubex"><img src="../photo/Кнопка.png" width="30px" height="30px"/>
+    	</div>
+		<script src="../pohidna/pohidna_JS/JS1.js"></script>
+	<script src="../../acsets/script.js"></script>
+	</body>
+	</html>
+	</body>
+	</html>

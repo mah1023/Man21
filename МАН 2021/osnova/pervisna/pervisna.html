@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+	<html lang = "uk">
+	<head>
+		<meta charset="UTF-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<link rel="stylesheet" href="../../style.css">
+    	<title>Первісна</title>
+    	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+        	$('#topNubex').fadeIn();
+            $(window).scroll(function(){
+                if($(this).scrollTop() !=0){
+                    $('#topNubex').fadeIn();
+                }
+                else {
+                    $('#topNubex').fadeOut();
+                }
+            });
+            $('#topNubex').click(function(){
+                $('body,html').animate({scrollTop:0},700);
+            });
+        });
+    </script>
+	</head>
+	<body>
+		<header class="header">
+			<h1>
+				<span class="blok_span"> <a href="../../index.html" class="header_silka">Главная </a></span> 
+				<span class="blok_span"> <a href="../mat_indukcia/Mat_indekcia.html" class="header_silka">Метод мат.индукции </a></span> 
+				<span class="blok_span"> <a href="../pohidna/pohidna.html" class="header_silka"> Похідна</a></span>
+				<span class="blok_span"> <a href="#" class="header_silka">Первісна</a></span>
+			</h1>
+		</header>
+		<div class="conteiner">
+			<div class="blok">
+			
+			</div>
+			<div class="footer">
+				<div class="footer_mini">
+					<div class="mini">
+						<p>Всі права захищені © 2023</p>
+					</div>
+					<div class="mini">
+						<p>Автор сайту: Хребтов Михайло</p>
+					</div>
+				</div>
+				<div class="footer_mini">
+					<div class="mini">
+						<p>Телефон для зв'язку: +380000000000</p>
+					</div>
+					<div class="mini">
+						<p>Пошта для зв'язку: hrebtovmisha@gmail.com</p>
+					</div>
+				</div>
+				<div class="footer_mini">
+					<div id="logo">
+						<img src="../photo/logo.png">
+					</div>
+				</div>
+				<div class="footer_mini">
+				<p><a href="../../index.html" class="footer_silka" >Главная </a></p>
+				<p><a href="../mat_indukcia/Mat_indekcia.html" class="footer_silka">Метод мат.индукции </a></p>
+				<p><a href="../pohidna/pohidna.html" class="footer_silka"> Похідна</a></p>
+				<p><a href="#" class="footer_silka">Первісна</a></p>
+				</div>
+			</div>
+		</div>
+	<div id="topNubex"><img src="../photo/Кнопка.png" width="30px" height="30px"/>
+    	</div>
+	 <script src="../../acsets/script.js"></script>
+	</body>
+	</html>
+	</body>
+	</html>
